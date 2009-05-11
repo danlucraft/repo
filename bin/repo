@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+$:.push(File.expand_path(File.dirname(__FILE__) + "/../lib/"))
+require 'repo'
+
+p Repo.store
+Repo.store.each { |k, o| p [k, o] }
