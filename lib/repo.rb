@@ -4,6 +4,7 @@ $:.push(File.expand_path(File.dirname(__FILE__)))
 require 'rubygems'
 require 'git_store'
 require 'gtk2'
+require 'repo/gtk'
 
 module Repo
   class << self
@@ -25,7 +26,7 @@ module Repo
   
   def self.start_gui
     unless $gutkumber
-      Gtk.main_with_queue
+      Gtk.main_with_queue(100)
     end
   end
 end

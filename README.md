@@ -9,6 +9,11 @@ DESCRIPTION
 A personal Wiki, like Tomboy but with the features I want. Also some
 PIM style stuff. Uses git as a backend.
 
+FEATURES
+--------
+
+    cucumber features/
+
 LICENSE
 -------
 
