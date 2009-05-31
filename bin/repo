@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
-$:.push(File.expand_path(File.dirname(__FILE__) + "/../lib/"))
-require 'repo'
+require File.dirname(__FILE__) + '/../lib/repo'
 
-p Repo.store
-Repo.store.each { |k, o| p [k, o] }
+Repo.store_path = ARGV.map {|arg| arg =~ /--store=(.*)/; $1}.compact.first
+Repo.start
+

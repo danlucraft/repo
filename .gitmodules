@@ -1,0 +1,3 @@
+[submodule "vendor/gutkumber"]
+	path = vendor/gutkumber
+	url = git://github.com/danlucraft/gutkumber.git
