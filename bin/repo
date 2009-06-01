@@ -3,5 +3,7 @@
 require File.dirname(__FILE__) + '/../lib/repo'
 
 Repo.store_path = ARGV.map {|arg| arg =~ /--store=(.*)/; $1}.compact.first
+raise "need argument --store=/path/to/store" unless Repo.store_path
+Repo.store
 Repo.start
 
